@@ -1,4 +1,6 @@
 # 02 Playground Functions!
+## :page_with_curl: Projeto de iniciação ao JavaScript
+---
 
 
 ## Requisitos do projeto
@@ -21,9 +23,8 @@ Considerando isso, crie uma função chamada `compareTrue` que, ao receber dois 
 Faça a função utilizando o operador `&&`.
 
 ```JavaScript
-// Desafio 1
+// Resposta
 function compareTrue(param1, param2) {
-    // seu código aqui
     if (param1 == true && param2 == true) {
         console.log("Ambos os valores são verdadeiros!");
         return true;
@@ -41,9 +42,8 @@ Escreva uma função com o nome `calcArea` que receba um valor de base (chamado 
 Lembre-se que a área de um triângulo é calculada através da seguinte fórmula: (base * altura) / 2.
 
 ```JavaScript
-// Desafio 2
+// Resposta
 function calcArea(base, height) {
-    // seu código aqui
     return (base * height) / 2;
 }
 ```
@@ -55,9 +55,8 @@ Escreva uma função com o nome `splitSentence`, a qual receberá uma string e r
 Exemplo: se a função receber a string `"go Trybe"`, o retorno deverá ser `['go', 'Trybe']`.
 
 ```JavaScript
-// Desafio 3
+// Resposta
 function splitSentence(string) {
-    // seu código aqui
     array = string.split(" ");
     console.log(array);
     return array;
@@ -71,9 +70,8 @@ Escreva uma função com o nome `concatName` que, ao receber uma array de string
 Isso quer dizer que, caso o parâmetro passado para `concatName` seja a Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], a função deverá retornar `Paolillo, Lucas`.
 
 ```JavaScript
-// Desafio 4
+// Resposta
 function concatName(array) {
-    // seu código aqui
     resultado = array[array.length - 1] + ", " + array[0];
     console.log(resultado);
     return resultado;
@@ -87,10 +85,8 @@ Escreva uma função com o nome `footballPoints` que receba o número de vitóri
 Para tanto, considere que cada vitória vale 3 pontos e cada empate vale 1 ponto.
 
 ```JavaScript
-// Desafio 5
+// Resposta
 function footballPoints(wins, ties) {
-    // seu código aqui
-    //retornar os pontos, vitoria = 3, empate = 1
     resultado = wins * 3 + ties;
     console.log(resultado);
     return resultado;
@@ -104,9 +100,8 @@ Escreva uma função chamada `highestCount` que, ao receber uma array de número
 Exemplo: caso o parâmetro de `highestCount` seja uma array com valores `[9, 1, 2, 3, 9, 5, 7]`, a função deverá retornar `2`, que é a quantidade de vezes que o número `9` (maior número do array) se repete.
 
 ```JavaScript
-// Desafio 6
+// Resposta
 function highestCount(array) {
-    // seu código aqui
     //saber qual é o maior
     let maiorNumero = array[0];
     let vezes = 1;
@@ -134,9 +129,8 @@ Exemplo: caso o gato `cat2` esteja a 2 unidades de distância do rato, e `cat1` 
 Caso os gatos estejam na mesma distância do rato, a função deverá retornar a string `"os gatos trombam e o rato foge"`.
 
 ```JavaScript
-// Desafio 7
+// Resposta
 function catAndMouse(mouse, cat1, cat2) {
-    // seu código aqui
     let catpos1;
     let catpos2;
 
@@ -182,9 +176,8 @@ Crie uma função chamada `fizzBuzz` que receba uma array de números e retorne 
 Exemplo: caso o parâmetro seja [2, 15, 7, 9, 45], sua função deverá retornar `["bug!", "fizzBuzz", "bug!", "fizz", "fizzBuzz"]`.
 
 ```JavaScript
-// Desafio 8
+// Resposta
 function fizzBuzz(array) {
-    // seu código aqui
     let resposta = [];
     for (let i = 0; i < array.length; i++) {
         if (array[i] % 3 === 0) {
@@ -222,9 +215,8 @@ Ou seja, caso o parâmetro de `encode` seja `"hi there!"`, o retorno deverá ser
 A segunda função deverá se chamar `decode` e faz o contrário de `encode` - ou seja, recebe uma string contendo números no lugar de letras minúsculas e retornará uma string com vogais minúsculas no lugar dos números (então, caso o parâmetro de `decode` seja `"h3 th2r2!"`, o retorno deverá ser `"hi there!"`).
 
 ```JavaScript
-// Desafio 9
+// Resposta
 function encode(string) {
-    // seu código aqui
     // transforma a string em array. Vira 'frase'
     let frase = string.split("");
 
@@ -256,7 +248,6 @@ function encode(string) {
 }
 
 function decode(string) {
-    // seu código aqui
     // transforma a string em array. Vira 'frase'
     let frase = string.split("");
 
@@ -341,7 +332,7 @@ Entradas da função:
 Caso o array venha vazio sua função deve retornar 'Vazio!'
 
 ```JavaScript
-// Desafio 10
+// Resposta
 function techList(array, name) {
     if (array.length < 1) {
         console.log("Vazio!");
@@ -350,7 +341,6 @@ function techList(array, name) {
         //sorting
         let sortedArray = array.sort();
 
-        // seu código aqui.
         let objects = [];
         for (let i = 0; i < sortedArray.length; i++) {
             objects[i] = {
@@ -377,9 +367,8 @@ Exemplo: caso o parâmetro da função seja [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1], `
 - Caso algum dos números da array seja menor que 0, maior que 9 ou se repita 3 vezes ou mais, `generatePhoneNumber` deverá retornar a string `"não é possível gerar um número de telefone com esses valores"`.
 
 ```JavaScript
-// Desafio 11
+// Resposta
 function generatePhoneNumber(param) {
-    // seu código aqui
     if (param.length !== 11) {
         return "Array com tamanho incorreto.";
     } else {
@@ -434,10 +423,8 @@ Para tanto, tenha em mente algumas considerações:
 Exemplo: o retorno de `triangleCheck(10, 14, 8)` deverá ser `true`.
 
 ```JavaScript
-// Desafio 12
+// Resposta
 function triangleCheck(lineA, lineB, lineC) {
-    // seu código aqui
-    //Pasou, agora vou escrever mais limpo
     let lado1 = false;
     if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)) {
         lado1 = true;
@@ -497,19 +484,13 @@ String retornada:
 **Dica:** pesquise por algo similar a `get all integers inside a string js`.
 
 ```JavaScript
-// Desafio 13
+// Resposta
 function hydrate(param) {
-    // seu código aqui 
-    //console.log(param.split(" "));
     paramArray = param.split(" ");
     let sum = 0;
     for (let i = 0; i < paramArray.length; i += 1) {
         if (isNaN(paramArray[i])) {
-            // console.log(paramArray[i]);
-            // console.log("Não é um número");
         } else {
-            // console.log(paramArray[i]);
-            // console.log("É um número");
             sum += Number(paramArray[i]);
         }
     }
