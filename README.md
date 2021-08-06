@@ -1,7 +1,5 @@
 # 02 Playground Functions!
-## :page_with_curl: Projeto de iniciação ao JavaScript
----
-
+### :page_with_curl: Projeto de iniciação ao JavaScript
 
 ## Requisitos do projeto
 
